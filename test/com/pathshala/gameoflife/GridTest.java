@@ -18,13 +18,22 @@ public class GridTest {
         infiniteGrid.addLivingCell(4, 5);
 
         infiniteGrid.killCell(4, 5);
-
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = infiniteGrid.isAlive(4, 5);
 
         assertThat(expected, is(actual));
     }
 
-    
+    @Test
+    public void ShouldBeAbleToAddALivingCell() {
+        Grid infiniteGrid = new Grid();
+        infiniteGrid.addLivingCell(4, 5);
+
+        boolean expected = true;
+        boolean actual = infiniteGrid.isAlive(4, 5);
+
+        assertThat(expected, is(actual));
+
+    }
 
 }

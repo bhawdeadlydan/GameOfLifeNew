@@ -19,7 +19,7 @@ public class Grid {
         ArrayList<Integer> coordinates = new ArrayList<Integer>();
         coordinates.add(0, xCoordinate);
         coordinates.add(1, yCoordinate);
-        gridOfLife.put(coordinates, true);
+        gridOfLife.put(coordinates, false);
 
     }
 
